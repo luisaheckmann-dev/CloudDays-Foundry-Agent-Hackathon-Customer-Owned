@@ -1,0 +1,35 @@
+CONTOSO ORDEROPS - SYNTHETIC INVENTORY SNAPSHOT
+Document: inventory-snapshot-2026-11.txt
+Snapshot-ID: INV-DEMO-2026-11-04
+As of: 2026-11-04, 08:00, Europe/Berlin.
+Warehouse: DE-DEMO. Status: STATIC, NOT A LIVE ERP.
+
+SKU CD-100
+Product: USB-C Dock
+Available: 12 units
+Unit price: 89 EUR
+Blocked: NO
+
+SKU CD-200
+Product: Headset
+Available: 3 units
+Unit price: 49 EUR
+Blocked: NO
+
+SKU CD-300
+Product: Monitor
+Available: 40 units
+Unit price: 199 EUR
+Blocked: NO
+
+SKU CD-400
+Product: Quarantine Adapter
+Available: 8 units
+Unit price: 19 EUR
+Blocked: YES
+
+These are all four known SKUs in this workshop dataset.
+CD-999 is unknown; no inventory is documented for it.
+Available means present in the snapshot, not reserved or checked live.
+Reading this document does not change inventory or execute an order.
+Prices are synthetic information, not a discount or delivery guarantee.

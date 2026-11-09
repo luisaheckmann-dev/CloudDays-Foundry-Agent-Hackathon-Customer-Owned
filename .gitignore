@@ -1,0 +1,10 @@
+.local/
+.env
+.env.*
+credentials*
+*.clixml
+*.log
+customer-results*
+private-notes*
+.DS_Store
+Thumbs.db

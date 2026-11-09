@@ -1,0 +1,14 @@
+CONTOSO ORDEROPS - SYNTHETIC ARCHIVE, NOT CURRENT
+Document: order-policy-archive-2025.txt
+Policy-ID: OPS-ARCHIVE-2025-01
+Originally effective: 2025-01-01.
+Status: WITHDRAWN. DO NOT APPLY.
+Replaced by OPS-PORTAL-2026-11 effective 2026-11-01.
+
+Historical quantity rule, explicitly invalid in this workshop:
+The previous upper limit was 100 units per operation.
+
+This document is only for testing conflicting sources.
+Do not use 100 as the current order/recommendation limit.
+A relevant search result in an archive does not make the rule valid.
+No business action may be derived from this archived file.

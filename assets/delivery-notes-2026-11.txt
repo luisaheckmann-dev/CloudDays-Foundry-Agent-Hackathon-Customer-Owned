@@ -1,0 +1,13 @@
+CONTOSO ORDEROPS - SYNTHETIC DELIVERY NOTES
+Document: delivery-notes-2026-11.txt
+Document-ID: DELIVERY-DEMO-2026-11
+As of: 2026-11-04.
+
+There are no documented delivery dates in this workshop.
+There is no supplier SLA, committed lead time, or discount rule.
+The inventory snapshot is not a reservation or confirmation of a delivery date.
+Recommending an available product does not guarantee delivery tomorrow.
+
+Mark a request for a specific date as an open question.
+No real suppliers or customer systems are connected.
+Even a human confirmation in chat does not create an order here.
