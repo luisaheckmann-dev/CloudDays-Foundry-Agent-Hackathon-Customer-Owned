@@ -2,11 +2,14 @@
 
 [Home](../README.md) | [Setup](CUSTOMER-SETUP.md) | [Agenda](AGENDA.md) | [Scoring](EVALUATION.md)
 
-Use your own corporate customer sign-in and customer project. Complete
-[setup sections 1-7](CUSTOMER-SETUP.md) before the learning session.
-The agents and store are created by you during Labs 1-2, not supplied by an
-instructor. If you rehearsed them in prework, retain your real baseline
-evidence or create separately named lab agents; never invent an earlier run.
+Use your own corporate Microsoft Entra sign-in and customer subscription.
+Complete [setup sections 1-7](CUSTOMER-SETUP.md) before the session where
+possible. If Foundry access is not ready, begin with the assisted access
+steps in Lab 0; facilitators help within your customer's permissions and
+prerequisites. Required setup must be ready before Lab 1. The agents and
+store are still created by you during Labs 1-2, not supplied by an instructor.
+If you rehearsed them in prework, retain your real baseline evidence or
+create separately named lab agents; never invent an earlier run.
 
 **Terms:** A model generates text. A deployment is a specific usable model
 configuration. A project is an access/data boundary. A prompt agent combines
@@ -18,24 +21,47 @@ tools, endpoints, keys, or function host are needed. UI names can vary;
 [documented capabilities and blockers](REFERENCES.md#portal-ui-and-validation-boundary)
 matter more than a matching screenshot.
 
-## Lab 0: Verify Your Customer Workspace
+## Lab 0: Configure and Verify Your Customer Access
 
-**15 minutes.** This is a readiness check, not subscription/admin bootstrap.
+**15-minute access-support checkpoint.** We will help you configure Foundry
+access **in your own subscription with your own Microsoft Entra identity**,
+as far as your permissions and customer prerequisites allow. Bring an approved
+active customer subscription and a reachable customer administrator. Full
+bootstrap or organizational approvals may need a separate setup clinic or
+follow-up; they are not guaranteed within these 15 minutes.
 
-1. Sign in to [Foundry](https://ai.azure.com) with your own customer identity
-   and confirm the correct customer directory. Complete approved MFA.
-2. Select your new workshop project and confirm its customer subscription,
-   parent resource and region. Do not select a similarly named workspace.
-3. Use **Foundry (new)**. Open **Build > Agents** and confirm the model
-   deployment created by your customer is selectable.
-4. Confirm you have agent authoring permissions, not a shared admin password.
-   The customer's own admin handles unresolved control/data-plane access.
-5. Open [the four core files](CUSTOMER-SETUP.md#7-review-monitoring-and-the-browser-file-path)
+1. Sign in to the [Azure portal](https://portal.azure.com) and
+   [Foundry](https://ai.azure.com) using your own customer Entra identity.
+   Complete MFA yourself; never share passwords, MFA codes or session tokens.
+2. With a facilitator if needed, check the account/directory menu and
+   **Azure portal > Subscriptions**. Select the approved active customer
+   subscription in its correct directory. A corporate sign-in alone does
+   not grant subscription access; your customer admin resolves missing access.
+3. If the workshop resource, project or model is not ready, work through
+   [setup sections 1-7](CUSTOMER-SETUP.md) with the facilitator and your
+   customer admin. Only an authorized customer operator performs privileged
+   creation or deployment, after customer approval of costs and configuration.
+   Use only your own approved customer scope, never an instructor environment.
+4. Have your customer admin check the [human and runtime permissions](ADMIN.md#browser-role-assignment-procedure):
+   participant Foundry User on the intended project, parent Reader when
+   needed for navigation, and the project's separate managed-identity access.
+   Facilitator support is guidance, not a grant of rights or a reason to give
+   all attendees Owner. Allow normal propagation, then refresh.
+5. In **Foundry (new)** select your ready workshop project. Confirm its
+   customer subscription, parent resource and region. Open **Build > Agents**
+   and confirm your customer's deployment is selectable. Verify authoring
+   access with your own participant sign-in, not an admin's shared session.
+6. Open [the four core files](CUSTOMER-SETUP.md#7-review-monitoring-and-the-browser-file-path)
    and [test questions](../prompts/03-test-questions.txt) in separate browser
    tabs. Ensure browser file downloads/uploads are approved.
-6. Open a private customer-approved results note. Record the date,
+7. Open a private customer-approved results note. Record the date,
    project label, deployment, setup mode, cost owner and cleanup owner.
    Never commit these details or screenshots to the public repository.
+8. For unresolved access, record `BLOCKED`, the failed operation, non-sensitive
+   error and the responsible customer admin/follow-up. Facilitators help
+   diagnose and escalate; they cannot bypass Entra policy, consent, missing
+   subscription rights, quota or network restrictions. See
+   [workshop-day support](FACILITATION.md#workshop-day-assisted-foundry-access).
 
 **Checkpoint:** You can create and test agents in **your own customer
 project**. If blocked, record the error with your customer support contact;

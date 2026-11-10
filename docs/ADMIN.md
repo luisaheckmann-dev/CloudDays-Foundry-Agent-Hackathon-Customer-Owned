@@ -8,6 +8,14 @@ collects participant email lists, passwords, tokens, or MFA codes. Use existing
 customer corporate identities and customer-internal groups. Any additional
 identity or consent decision belongs to the customer.
 
+For [workshop-day assisted access](FACILITATION.md#workshop-day-assisted-foundry-access),
+keep an authorized customer administrator reachable. Facilitators help
+participants identify the correct subscription/directory, navigate Foundry
+and diagnose access errors using the participant's own Entra sign-in.
+Customer admins perform approved privileged actions and targeted role
+assignments; facilitator guidance does not confer administrator authority
+or require inviting the instructor into the customer's directory.
+
 ## Separate Bootstrap from Building
 
 | Operation | Customer-approved authority | Scope and caveats |

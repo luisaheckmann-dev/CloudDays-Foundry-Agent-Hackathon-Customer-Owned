@@ -9,7 +9,7 @@
 | Customer subscription/security owner | Subscription, approvals/consent, billing, residency, network, retention |
 | Customer resource/model administrator | From-zero bootstrap, model quota/deployment, targeted IAM and managed-identity verification |
 | Customer participant | Their corporate sign-in, agent/store creation, source inspection and private results |
-| Instructor/facilitator | Public materials, learning discussion, manual rubric and non-sensitive troubleshooting |
+| Instructor/facilitator | Guided Foundry access setup in participants' own subscriptions/Entra identities where possible, public materials, learning discussion, manual rubric and non-sensitive troubleshooting |
 | Customer cleanup owner | Approved artifact inventory, deletion decision, verification and final cost review |
 
 An instructor identity has no required Azure role. Do not collect customer
@@ -23,15 +23,19 @@ instructor tenant, or instructor-hosted store is part of this workshop.
 1. Send this repository's [home page](../README.md), [setup](CUSTOMER-SETUP.md),
    [admin guide](ADMIN.md), and [costs](COSTS-CLEANUP.md) to the customer
    through their approved channel. The customer owns approvals.
-2. Plan **60-90 minutes or more** technical prework after organizational
-   approvals; reserve separate lead time for identity, quota and network.
-   Do not promise this bootstrap fits inside 210 teaching minutes.
+2. Plan **60-90 minutes or more** technical setup after organizational
+   approvals, preferably as prework or in a separate workshop-day setup clinic.
+   Keep a customer admin reachable for access support; reserve separate lead
+   time for identity, quota and network. Do not promise full bootstrap or every
+   access fix fits inside 210 teaching minutes.
 3. Default to **one participant per project** in the customer environment.
    Team projects are allowed only as an explicit customer-approved common
    access boundary. Team members use separate identities and coordinate
    agent names/versions; agents alone do not isolate their shared files.
-4. The customer admin follows setup 1-7 and verifies the restricted
-   participant path. Participants create their agents and stores in Labs 1-2.
+4. Ask the customer admin to complete setup 1-7 and verify the restricted
+   participant path before the session where possible. Otherwise use the
+   assisted access steps below to help complete the missing setup.
+   Participants still create their agents and stores in Labs 1-2.
    If a customer rehearses the full path, use a separately labeled customer
    test project or preserve the real rehearsal evidence. No instructor
    resource is needed for either rehearsal or delivery.
@@ -48,6 +52,40 @@ instructor tenant, or instructor-hosted store is part of this workshop.
 8. Agree on privacy for screen sharing, recorded sessions, notes and traces.
    Use synthetic content only. Keep customer IDs, endpoints and raw
    telemetry out of public issues, slides and this repository.
+
+## Workshop-Day Assisted Foundry Access
+
+We will help participants configure Foundry access **in their own Azure
+subscriptions, with their own Microsoft Entra identities**, as far as customer
+permissions and prerequisites allow. Support is not limited to telling them
+to arrive with a working project; guide the missing access steps together.
+
+1. Let each participant control their own signed-in browser and complete MFA.
+   Guide navigation; never request passwords, MFA codes, tokens or an admin's
+   shared session. Use private one-to-one help if approved screen sharing would
+   otherwise expose customer details to other attendees.
+2. Check the customer's Entra directory and approved active subscription in
+   **Azure portal > Subscriptions**, then the selected directory in Foundry.
+   Do not move subscriptions between directories or use instructor accounts.
+3. Identify the missing step in [setup sections 1-7](CUSTOMER-SETUP.md).
+   Help the authorized customer operator complete approved resource/project
+   setup when needed; check existing provisioning before retrying.
+4. For access errors, identify the human or project managed identity and the
+   denied action/scope. Guide the customer's authorized administrator through
+   the [targeted role procedure](ADMIN.md#browser-role-assignment-procedure).
+   Do not grant facilitators access or give all attendees broad Owner rights.
+5. Allow permission propagation and refresh, then verify the participant's
+   **own** sign-in can open the intended project and **Build > Agents** with
+   the customer's deployment. Continue with
+   [Lab 0](LABS.md#lab-0-configure-and-verify-your-customer-access), then Lab 1.
+6. If customer approvals, Entra policy, subscription rights, quota or networking
+   cannot be resolved during support, record `BLOCKED` with the responsible
+   customer owner and next step. Arrange a setup continuation or an approved
+   customer-owned observation path below; never claim an individual cloud pass.
+
+Lab 0 is a **15-minute support checkpoint**, not a guarantee that every
+organization can complete first-time bootstrap on the day. Keep longer setup
+work separate or agree on a continuation; the agent exercises stay unchanged.
 
 ## Customer Acceptance Checklist
 
@@ -86,8 +124,9 @@ not pass an individual's own cloud test.
    For the opening demonstration use the synthetic documents as a browser
    reading exercise, or a willing customer's already-approved test run
    inside their own environment. Instructor cloud access is never required.
-2. At Lab 0 check readiness, not new subscriptions. Escalate bootstrap
-   problems to the customer's own administrator.
+2. At Lab 0 actively guide customer-owned Foundry access setup as described
+   above. Work with the customer's admin on missing permissions or bootstrap;
+   unresolved dependencies stay blocked. Do not create or lend subscriptions.
 3. Run question waves with one outstanding request per learner; pause on
    throttling. Use shorter replies, wait for the service's retry guidance,
    and reduce parallel demand before considering any approved capacity change.

@@ -1,6 +1,6 @@
 # Cloud Days: Customer-Owned Foundry Agent Workshop
 
-**English | Browser only | From zero | Materials reviewed: 2026-11-09**
+**English | Browser only | From zero | Materials reviewed: 2026-11-09 | Access onboarding updated: 2026-11-10**
 
 Build a fictional Contoso OrderOps prompt agent in **your own Microsoft
 Foundry environment**. Create your resource group, Foundry resource, project,
@@ -38,14 +38,28 @@ organization's approvals. No existing workshop cloud resources are needed.
 | Empty project, permissions, model, or search blockers | [Troubleshooting](docs/TROUBLESHOOTING.md) |
 | Official documentation and UI limitations | [References](docs/REFERENCES.md) |
 
-**Default path:** approve prerequisites, complete setup sections 1-7, then
-follow the labs. Setup sections 8-10 are the detailed creation and retrieval
-instructions used during Labs 1-2; you may rehearse them privately first.
-No prepared cloud agent or preindexed knowledge base is a prerequisite.
+**Workshop-day access support:** We will help participants configure their
+Foundry access in **their own Azure subscriptions, using their own Microsoft
+Entra identities**, as far as their permissions and customer prerequisites
+allow. Start with [assisted access in Lab 0](docs/LABS.md#lab-0-configure-and-verify-your-customer-access).
+Bring your customer sign-in and MFA, an approved active customer subscription,
+and a reachable customer administrator for any required access approvals or
+role assignments. Facilitators guide the browser steps; they do not supply
+accounts, subscriptions, administrator rights, or hosted Foundry resources.
 
-Allow **60-90 minutes or more for technical prework**, plus your organization's
-approval/identity/quota/network lead time. The **210-minute learning agenda**
-does not include first-time administrator approval and infrastructure bootstrap.
+**Default path:** prepare approvals and complete setup sections 1-7 before
+the session where possible. If access is not ready, use the workshop-day
+support in Lab 0 to work through the missing steps with your customer admin.
+Complete the required setup before Lab 1. Setup sections 8-10 remain the
+creation and retrieval instructions used during Labs 1-2; no prepared cloud
+agent or preindexed knowledge base is a prerequisite.
+
+Allow **60-90 minutes or more for technical setup**, preferably as prework or
+in a separate setup clinic on the workshop day, plus your organization's
+approval/identity/quota/network lead time. Lab 0 includes time-boxed access
+support, not a guarantee of resolving every blocker. The **210-minute learning
+agenda** does not include full first-time administrator approval and
+infrastructure bootstrap.
 
 ## What You Need
 

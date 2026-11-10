@@ -7,6 +7,12 @@ administrator. Use the actual error, scope and identity, not generic privilege
 escalation. Never use instructor resources, keys, shared passwords, new guest
 identities in an instructor directory, or hidden developer-tool workarounds.
 
+On the workshop day, facilitators provide
+[guided access support](FACILITATION.md#workshop-day-assisted-foundry-access)
+in participants' own subscriptions with their own Microsoft Entra identities.
+Customer admins still approve and perform privileged fixes; support cannot
+guarantee resolution of organizational blockers during the session.
+
 ## Diagnose Before Retrying
 
 1. Confirm customer identity/directory/subscription/project in the browser.

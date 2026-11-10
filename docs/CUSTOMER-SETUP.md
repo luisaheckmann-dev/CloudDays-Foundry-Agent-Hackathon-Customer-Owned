@@ -7,10 +7,21 @@ Nothing here is precreated in Azure. The following are browser actions
 for an authorized customer operator; this repository does not execute them.
 No account keys, terminal, SDK, local application, or hosted function is used.
 
-Complete sections 1-7 as prework. During Labs 1-2 follow sections 8-10 to
-create the learning artifacts. An authorized solo learner may do all steps.
-For managed customer environments, the customer's admin performs bootstrap
-and grants least-privilege project access; the participant does the labs.
+Complete sections 1-7 as prework where possible. On the workshop day,
+facilitators will help participants configure Foundry access in their own
+subscriptions with their own Microsoft Entra identities, as far as customer
+permissions and prerequisites allow. Start with
+[Lab 0](LABS.md#lab-0-configure-and-verify-your-customer-access) for this support.
+Bring your own customer sign-in/MFA, an approved active subscription and a
+reachable customer administrator. Missing approvals, permissions, quota or
+network prerequisites may require a separate setup clinic or follow-up.
+
+Required setup must be ready before Lab 1. During Labs 1-2 follow sections
+8-10 to create the learning artifacts. An authorized solo learner may do all
+steps. For managed customer environments, the customer's admin performs
+bootstrap and grants least-privilege project access; facilitators guide the
+steps without taking over credentials or requiring access to the customer's
+tenant. The participant does the labs.
 
 ## 1. Approve the Customer Environment
 
